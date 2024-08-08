@@ -4,7 +4,7 @@
 
 ### Learn About My Projects
 
-#### [Internal Blog Post Project](/bank)
+#### [Internal Blog Post Project](/iFood)
 <img src="images/Marital Status by Age group.png?raw=true"/>
 Can Food Delivery Services Really Deliver?
 
