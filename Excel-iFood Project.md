@@ -27,29 +27,29 @@ Original data has 41 columns and 2024 rows of data. Because of the small data si
 "Aha!" he exclaimed one moonlit night, "I see where we have faltered!"
 Using a combination of *data filtering, data sorting, general aggregation, conditional formatting, fill tools, advanced formulas, graphs, regression, and pivot table* I discovered that the previous campaigns had been too general, and lacking in targeted appeal.  
 
-## Scatter Plot:
+#### Scatter Plot:
 The plot shows a positive correlation between income and the amount spent. At about 70000 annual income the total spent for most customers     was over 500. This is the case 67% of the time per the correlation coefficient.
 
 <img src="images/Scatter Plot of Income and total spent.png?raw=true"/>
 
-## Bar Chats:
+#### Bar Chats:
 
-# - Age groups: 
+**- Age groups:** 
 Across all campaigns it is observed that the age groups between 36-65 are the most accepting and likely to participate in a campaign. 
 
 <img src="images/Acceptance across all campaigns.png?raw=true"/>
 
-# - Marital status: 
+**- Marital status:** 
 analysis shows that the married, married-together, and divorced in the ages between 36 and 65 are the ones most likely to join a campaign.
 
 <img src="images/Marital Status by Age group.png?raw=true"/>
 
-# - Kids/Teenage at home: 
+**- Kids/Teenage at home:** 
 customers in the ages 36 - 65 with at least 1 kid or a teenager at home are the most likely to join a campaign.
 
 <img src="images/Customers with kid.png?raw=true"/>
 
-# - Purchase channel: 
+**- Purchase channel:** 
 the ages 36 to 65 in campaign6 made it clear that the web, catalogue, and deal purchases were the most preferred. 
 
 <img src="images/Sum of Purchases.png?raw=true"/>
