@@ -36,7 +36,7 @@ The data shows that the 66+ years old have the highest average income followed c
 **Recency Among All Ages:**
 There is no significant difference in the recency between all ages at an average recency of 49 days.
 
-<img src="images/Av Income and Age.png?raw=true"/>
+<img src="images/Average Recency by Age Group.png?raw=true"/>
 
 
 **Income and Total Spent**
