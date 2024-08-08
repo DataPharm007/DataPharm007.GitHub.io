@@ -25,7 +25,7 @@ Original data has 41 columns and 2024 rows of data. Because of the small data si
 
 ### The Analysis:
 "Aha!" he exclaimed one moonlit night, "I see where we have faltered!"
-I discovered that the previous campaigns had been too general, lacking in targeted appeal. 
+Using a combination of data filtering, data sorting, general aggregation, conditional formatting, fill tools, advanced formulas, graphs, regression, and pivot table I discovered that the previous campaigns had been too general, and lacking in targeted appeal.  
 
 ### Scatter Plot:
 The plot shows a positive correlation between income and the amount spent. At about 70000 annual income the total spent for most customers was over 500. This is the case 67% of the time per the correlation coefficient.
