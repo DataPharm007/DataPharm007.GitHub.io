@@ -14,9 +14,9 @@ Thank you for your patience!🙂
  
 
 [---
-#### [External Link Project](https://www.linkedin.com/pulse/what-i-learned-21-days-data-avery-smith)
-<img src="images/21 Days To Data Challenge What I've Learned Cover.png?raw=true"/>](https://www.linkedin.com/pulse/what-i-learned-21-days-data-avery-smith)
-My final write up for Avery Smith's 21 Days To Data project covering New York City crime data. ]:#
+ #### [External Link Project](https://www.linkedin.com/pulse/what-i-learned-21-days-data-avery-smith)
+ <img src="images/21 Days To Data Challenge What I've Learned Cover.png?raw=true"/>](https://www.linkedin.com/pulse/what-i-learned-21-days-  data-avery-smith)
+ My final write up for Avery Smith's 21 Days To Data project covering New York City crime data. ]:#
 
 
 [---]
