@@ -28,7 +28,7 @@ I discovered that the previous campaigns had been too general, lacking in target
 
 ## Scatter Plot:
 The plot shows a positive correlation between income and the amount spent. At about 70000 annual income the total spent for most customers was over 500. This is the case 67% of the time per the correlation coefficient.
-<img src="images/scatter plot of income and total spent.png?raw=true"/>
+<img src="images/Scatter Plot of Income and total spent.png?raw=true"/>
 
 
 ### 2. You can add any images you'd like. 
