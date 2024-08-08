@@ -44,7 +44,7 @@ The plot shows a positive correlation between income and the amount spent. At ab
 
 - Kids/Teenage at home: customers in the ages 36 - 65 with at least 1 kid or a teenager at home are the most likely to join a campaign
 
-<img src="images/Customers with kids.png?raw=true"/>
+<img src="images/Customers with kid.png?raw=true"/>
 
 - Purchase channel: ages 36 to 65 in campaign6 made it clear that web, catalogue and deals purchases were the most preferred. 
 
