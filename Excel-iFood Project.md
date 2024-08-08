@@ -68,4 +68,16 @@ the ages 36 to 65 in campaign6 made it clear that the web, catalogue, and deal p
 
 <img src="images/Sum of Purchases.png?raw=true"/>
 
+### Proposals:
+With the newfound insight, here are my proposed new peace offerings (campaign targets). 
 
+- Demographic segmentation: *Targeted customers should preferably be within the ages of 36 and 65, and married with at least 1 kid or a teenager at home.* 
+- Economic segmentation: *campaign targets the ages between 36 and 65 with an average annual income of at least 60000.*
+- Customer behavior: *campaigns should be tailored with a call-to-action to make a web, catalogue or a deal purchase.*
+- (Data not shown) *Analysis shows that most responders opted in to campaigns during the month of January and preferably on a Saturday followed closely by Thursday. So, campaigns should be tailored to reach recipients by Thursdays or Saturdays.*
+
+
+And that, dear reader, is how a kingdom on the data planet Excelos turned its fortunes around and thrived once more.
+
+Thank you for discovering with me.
+Do you have any questions I can help you answer? Don't hesitate to reach out. 👍
