@@ -5,7 +5,7 @@
 ### Learn About My Projects
 
 #### [Internal Blog Post Project](/bank)
-<img src="images/Marital Status by Age group.png.jpg?raw=true"/>
+<img src="images/Marital Status by Age group.png?raw=true"/>
 Tolulope is the best
 
 ---
