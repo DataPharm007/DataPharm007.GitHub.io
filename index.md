@@ -4,9 +4,9 @@
 
 ### Learn About My Projects
 
-#### [Internal Blog Post Project](/iFood.md)
+#### [The Tale of Data Planet Excelos and the Kingdom of Profitshire](/excel-ifood project.md)
 <img src="images/Marital Status by Age group.png?raw=true"/>
-Can Food Delivery Services Really Deliver?
+In this assigned project, I looked for the reason(s) why iFood, a Brazil food delivery services was incurring loss despite several campaigns and having 83% of the market share. Is that they have reached their market cap? Is it that the wrong demographics were being targeted in the campaign, or is it that the campaign missed the mark on what people are really needing? Come explore with me.
 
 ---
 #### [Linked File Project](/files/Day 12 - 21 days to data.pdf)
