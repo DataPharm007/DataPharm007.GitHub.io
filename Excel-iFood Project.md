@@ -11,9 +11,25 @@ For many years, Profitshire flourished, and its coffers overflowed with gold (co
 
 In his moment of desperation, King Marginus called for the only person who could save the day: the legendary Captain Analysis (aka Me) with my ability to transform numbers into actionable strategies that has saved many a kingdom from ruin.
 
-```python
-print('this is the python code I used to solve this problem')
-```
+### Task:
+- Provide understanding of the characteristics features of responders
+- Propose and describe customer segmentation based on customer behavior
+
+### The Data:
+I pored over the ancient scrolls of past peace offerings, deciphering the data hidden within.
+Original data has 41 columns and 2024 rows of data. Because of the small data size, I immediately put one of my trusted companion to work, Sir Spread Sheet as the analysis tool of choice. 
+    - Data cleaning: used TEXTJOIN to identify and remove duplicates
+    - Transformation: 
+      - Insert columns: Age group column using IFS formula; extracted name of Month and Day customers joined the campaigns using TEXT formula.
+
+### The Analysis:
+"Aha!" he exclaimed one moonlit night, "I see where we have faltered!"
+I discovered that the previous campaigns had been too general, lacking in targeted appeal. 
+
+## Scatter Plot:
+The plot shows a positive correlation between income and the amount spent. At about 70000 annual income the total spent for most customers was over 500. This is the case 67% of the time per the correlation coefficient.
+<img src="images/scatter plot of income and total spent.png?raw=true"/>
+
 
 ### 2. You can add any images you'd like. 
 
