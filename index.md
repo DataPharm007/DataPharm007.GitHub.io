@@ -9,7 +9,7 @@
 In this assigned project, I looked for the reason(s) why iFood, a Brazil food delivery services was incurring loss despite several campaigns and having 83% of the market share. Is it that they have reached their market cap? Is it that the wrong demographics were being targeted in the campaign, or is it that the campaign missed the mark on what people are really needing? Come explore with me.
 
 ---
-#### [More Projects Coming Soon]
+#### More Projects Coming Soon
 Thank you for your patience!🙂
  
 
