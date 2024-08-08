@@ -15,19 +15,21 @@ In his moment of desperation, King Marginus called for the only person who could
 - Provide understanding of the characteristics features of responders
 - Propose and describe customer segmentation based on customer behavior
 
-### The Data:
+### The Data, cleaning, and Transformation:
 I pored over the ancient scrolls of past peace offerings, deciphering the data hidden within.
 Original data has 41 columns and 2024 rows of data. Because of the small data size, I immediately put one of my trusted companion to work, Sir Spread Sheet as the analysis tool of choice. 
-    - Data cleaning: used TEXTJOIN to identify and remove duplicates
-    - Transformation: 
-      - Insert columns: Age group column using IFS formula; extracted name of Month and Day customers joined the campaigns using TEXT formula.
+
+- Duplicates: used TEXTJOIN to identify and remove duplicates
+- Insert columns: Age group column using IFS formula;
+- Insert columns: extracted name of Month and Day customers joined the campaigns using TEXT formula.
 
 ### The Analysis:
 "Aha!" he exclaimed one moonlit night, "I see where we have faltered!"
 I discovered that the previous campaigns had been too general, lacking in targeted appeal. 
 
-## Scatter Plot:
+### Scatter Plot:
 The plot shows a positive correlation between income and the amount spent. At about 70000 annual income the total spent for most customers was over 500. This is the case 67% of the time per the correlation coefficient.
+
 <img src="images/Scatter Plot of Income and total spent.png?raw=true"/>
 
 
