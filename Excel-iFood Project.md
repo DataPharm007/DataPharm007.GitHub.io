@@ -48,7 +48,7 @@ The plot shows a positive correlation between income and the amount spent. At ab
 
 - Purchase channel: ages 36 to 65 in campaign6 made it clear that web, catalogue and deals purchases were the most preferred. 
 
-<img src="images/Sum of purchases.png?raw=true"/>
+<img src="images/Sum of Purchases.png?raw=true"/>
 
 ### 2. You can add any images you'd like. 
 
