@@ -23,11 +23,23 @@ Original data has 41 columns and 2024 rows of data. Because of the small data si
 - Insert columns: Age group column using **IFS formula**;
 - Insert columns: extracted name of Month and Day customers joined the campaigns using TEXT formula.
 
-### The Analysis:
+### The Discovery:
 "Aha!" he exclaimed one moonlit night, "I see where we have faltered!"
-Using a combination of *data filtering, data sorting, general aggregation, conditional formatting, fill tools, advanced formulas, graphs, regression, and pivot table* I discovered that the previous campaigns had been too general, and lacking in targeted appeal.  
+By using a combination of *data filtering, data sorting, general aggregation, conditional formatting, fill tools, advanced formulas, graphs, regression, and pivot table* I discovered that the previous campaigns had been too general, and lacking in targeted appeal. Here are my discoveries: 
 
-**Income vs Total spent:**
+**Income By Age Groups:**
+The data shows that the 66+ years old have the highest average income followed closely by 51-65 years old.
+
+<img src="images/Av Income and Age.png?raw=true"/>
+
+
+**Recency Among All Ages:**
+There is no significant difference in the recency between all ages at an average recency of 49 days.
+
+<img src="images/Av Income and Age.png?raw=true"/>
+
+
+**Income and Total Spent**
 The plot of annual income vs total spent shows a positive correlation between income and the amount spent. At about 60000 annual income the total spent for most customers was over 500. This is the case 67% of the time per the correlation coefficient.
 
 <img src="images/Scatter Plot of Income and total spent.png?raw=true"/>
