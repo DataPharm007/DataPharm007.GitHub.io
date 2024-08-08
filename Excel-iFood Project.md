@@ -33,16 +33,16 @@ The data shows that the 66+ years old have the highest average income followed c
 <img src="images/Av Income and Age.png?raw=true"/>
 
 
-**Recency Among All Ages:**
-There is no significant difference in the recency between all ages at an average recency of 49 days.
-
-<img src="images/Average Recency by Age Group.png?raw=true"/>
-
-
 **Income and Total Spent**
 The plot of annual income vs total spent shows a positive correlation between income and the amount spent. At about 60000 annual income the total spent for most customers was over 500. This is the case 67% of the time per the correlation coefficient.
 
 <img src="images/Scatter Plot of Income and total spent.png?raw=true"/>
+
+
+**Recency Among All Ages:**
+There is no significant difference in the recency between all ages at an average recency of 49 days.
+
+<img src="images/Average Recency by Age Group.png?raw=true"/>
 
 
 **Campaign Responders Across Age groups:** 
