@@ -1,6 +1,7 @@
-## This can be a template for an internal prject
+## The Tale of Data Planet Excelos and the Kingdom of Profitshire
 
-**Project description:** You can use this template to create projects in the future. Simply duplicate the page and change the text and images. 
+### Introduction:
+**Project description:** Once upon a time, in a faraway galaxy, there was a curious little planet known as Excelos. Unlike other planets, Excelos was not made of rock or gas but of data—beautiful streams of numbers, shimmering charts, and pulsating graphs. At the heart of Excelos was a mighty kingdom known as Profitshire (aka iFood), ruled by a wise and somewhat eccentric King, known to all as King Marginus (aka The CEO). 
 
 Be sure to follow *The Interesting Project Template* as shown in [**The Data Science Project Studio**](https://www.datacareerjumpstart.com/products/the-data-science-project-studio/categories/2150357707/posts/2158441592). 
 
