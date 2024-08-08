@@ -36,7 +36,7 @@ The plot shows a positive correlation between income and the amount spent. At ab
 
 - Age groups: Across all campaigns it is observed that the age groups between 36-65 are the most accepting and likely to participate in a         campaign. 
 
-<img src="images/images/Acceptance across all campaigns.png?raw=true"/>
+<img src="images/Acceptance across all campaigns.png?raw=true"/>
 
 - Marital status: analysis shows that the married, married-together, and divorced in the ages between 36 and 65 are the ones most likely          to join a campaign.
 
