@@ -10,7 +10,7 @@ In this assigned project, I looked for the reason(s) why iFood, a Brazil food de
 
 ---
 #### [Coming Soon](/files/Day 12 - 21 days to data.pdf)
-<img src="images/images.png?raw=true"/>
+<img src"images/images.png?raw=true"/>
  
 
 ---
