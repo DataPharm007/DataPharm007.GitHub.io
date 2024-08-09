@@ -86,3 +86,5 @@ And that, dear reader, is how a kingdom on the data planet Excelos turned its fo
 
 Thank you for discovering with me.
 Do you have any questions I can help you answer? Don't hesitate to reach out. 👍
+
+[**Reference original dataset:**](https://github.com/nailson/ifood-data-business-analyst-test/blob/master/ifood_df.csv)  
