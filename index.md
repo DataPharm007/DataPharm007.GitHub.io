@@ -19,7 +19,7 @@ In this case study, I analyzed the State of Massachusetts education data. The st
 - How does class size affect college admission?
 - What are the top math schools in the state?
 
-Click to listen.
+[Click to listen.](https://www.linkedin.com/posts/dr-joseph-adebayo_visualization-report-on-massachusetts-education-activity-7229480881587961856-gRnr?utm_source=share&utm_medium=member_desktop) 
 ---
 ### More Projects Coming Soon
 Thank you for your patience!🙂
