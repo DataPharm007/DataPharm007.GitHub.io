@@ -11,13 +11,15 @@ In this assigned project, I looked for the reason(s) why iFood, a Brazil food de
 
 ---
 ### [The state of Massachusetts Education](https://www.linkedin.com/posts/dr-joseph-adebayo_visualization-report-on-massachusetts-education-activity-7229480881587961856-gRnr?utm_source=share&utm_medium=member_desktop)
-[<img src="images/Edu_Tableau_Project.png?raw=true"/>](https://www.linkedin.com/posts/dr-joseph-adebayo_visualization-report-on-massachusetts-education-activity-7229480881587961856-gRnr?utm_source=share&utm_medium=member_desktop) 
+[<img src="images/Mass_Edu Project.png?raw=true"/>](https://www.linkedin.com/posts/dr-joseph-adebayo_visualization-report-on-massachusetts-education-activity-7229480881587961856-gRnr?utm_source=share&utm_medium=member_desktop) 
 
 In this case study, I analyzed the State of Massachusetts education data. The state of Massachusetts wants to provide a report to the school board on the state of the system. In that report the superintendent wants 3 major questions answered.
 
-#### - What schools are struggling the most?
-#### - How does class size affect college admission?
-#### - What are the top math schools in the state?
+- What schools are struggling the most?
+- How does class size affect college admission?
+- What are the top math schools in the state?
+
+Click to listen.
 ---
 ### More Projects Coming Soon
 Thank you for your patience!🙂
