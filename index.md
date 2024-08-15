@@ -10,7 +10,7 @@ In this assigned project, I looked for the reason(s) why iFood, a Brazil food de
 
 
 ---
-### [The state of Massachusetts Education (Education-Tableau.md)
+### [The state of Massachusetts Education](Education-Tableau.md)
 <img src="images/Edu_Tableau_Project.png?raw=true"/>(https://www.linkedin.com/posts/dr-joseph-adebayo_visualization-report-on-massachusetts-education-activity-7229480881587961856-gRnr?utm_source=share&utm_medium=member_desktop) 
 
 In this case study, I analyzed the State of Massachusetts education data. The state of Massachusetts wants to provide a report to the school board on the state of the system. In that report the superintendent wants 3 major questions answered.
