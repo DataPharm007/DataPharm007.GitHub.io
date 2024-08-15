@@ -10,14 +10,14 @@ In this assigned project, I looked for the reason(s) why iFood, a Brazil food de
 
 
 ---
-### [The state of Massachusetts Education ()
-[<img src="images/21 Days To Data Challenge What I've Learned Cover.png?raw=true"/> (https://www.linkedin.com/pulse/what-i-learned-21-days-data-avery-smith)]: #
+### [The state of Massachusetts Education (Education-Tableau.md)
+<img src="images/?raw=true"/> 
 
 In this case study, I analyzed the State of Massachusetts education data. The state of Massachusetts wants to provide a report to the school board on the state of the system. In that report the superintendent wants 3 major questions answered.
 
-** What schools are struggling the most?
-** How does class size affect college admission?
-** What are the top math schools in the state?
+#### - What schools are struggling the most?
+#### - How does class size affect college admission?
+#### - What are the top math schools in the state?
 ---
 ### More Projects Coming Soon
 Thank you for your patience!🙂
