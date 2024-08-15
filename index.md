@@ -17,7 +17,7 @@ In this case study, I analyzed the State of Massachusetts education data. The st
 
 - What schools are struggling the most?
 - How does class size affect college admission?
-- What are the top math schools in the state?
+- What are the top 4th grade math districts in the state?
 
 [Click to listen.](https://www.linkedin.com/posts/dr-joseph-adebayo_visualization-report-on-massachusetts-education-activity-7229480881587961856-gRnr?utm_source=share&utm_medium=member_desktop) 
 ---
