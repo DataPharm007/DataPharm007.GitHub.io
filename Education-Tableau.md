@@ -1,4 +1,4 @@
-## The state of Massachusetts High Schools Report
+## The state of Massachusetts Schools Report
 
 ### Introduction:
 
