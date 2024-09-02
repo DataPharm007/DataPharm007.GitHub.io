@@ -27,7 +27,8 @@ The dataset has **1.32M rows, and 30 columns.** Data cleaning and analysis was c
 
 To begin, I created a table named “loans world bank” with all 30 columns to insert the downloaded raw data csv file. 
 Right off the start I Encountered unterminated quotes error: 
-"ERROR: unterminated CSV quoted field CONTEXT: COPY loans_world_bank, line 1325837: "09/30/2013 12:00:00 AM,IDA06340,AFRICA,NE,Niger,"Ministre d'Etat, Ministre du Plan, de l'",Repaid,0...."
+
+_"ERROR: unterminated CSV quoted field CONTEXT: COPY loans_world_bank, line 1325837: "09/30/2013 12:00:00 AM,IDA06340,AFRICA,NE,Niger,"Ministre d'Etat, Ministre du Plan, de l'",Repaid,0...."_
 
 I fixed the error by editing the raw text data with search and replace function.
 Data Import was successful
