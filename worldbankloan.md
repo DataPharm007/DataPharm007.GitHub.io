@@ -33,16 +33,15 @@ _"ERROR: unterminated CSV quoted field CONTEXT: COPY loans_world_bank, line 1325
 I fixed the error by editing the raw text data with search and replace function.
 Data Import was successful
 
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
-[<img src="images/select  from loans_world_bank LIMIT 10.png?raw=true"/>]
-[<img src="images/EASTERN AND SOUTHERN AFRI.png?raw=true"/>]
+<img src="images/select  from loans_world_bank LIMIT 10.png?raw=true"/> <img src="images/EASTERN AND SOUTHERN AFRI.png?raw=true"/>
 
 #### Data cleaning:
 
 The adventure began with an exploration of the dataset, where I cleaned and standardized the information, ensuring that every piece of data fit neatly into our story.
 To begin the data cleaning process I created a **temporary table named world_bank_loan** in case I need to delete unwanted columns. That way the original data is still available if needed.
 
-[<img src="images/--CREATE A TENP TABLE FOR CLEANING AND TRANSFORMATION.png?raw=true"/>]
+<img src="images/--CREATE A TENP TABLE FOR CLEANING AND TRANSFORMATION.png?raw=true"/>
+
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 
@@ -51,11 +50,11 @@ A Quick Look through the table revealed some inconsistencies in country and regi
 Vietnam was entered as **‘Vietnam’, and ‘Viet Nam’**; **‘North Macedonia as Macedonia', 'Macedonia, former Yugoslav Republic of', 'Macedonia, former Yugoslav Republic’.**
 I conducted a little research on Macedonia and found out the current name is ‘North Macedonia’; The other versions were updated using CASE..WHEN query to correct the entries.
 
-[<img src="images/--Standardize Country data entry.png?raw=true"/>]
-[<img src="images/Viet Nam.png?raw=true"/>]
-[<img src="images/UPDATE world_bank_loan.png?raw=true"/>]
-[<img src="images/country_spelling a.png?raw=true"/>]
-Updated format.
+<img src="images/--Standardize Country data entry.png?raw=true"/> <img src="images/Viet Nam.png?raw=true"/>
+
+<img src="images/UPDATE world_bank_loan.png?raw=true"/> <img src="images/country_spelling a.png?raw=true"/>
+                                                                        Updated format.
+
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
@@ -67,16 +66,14 @@ Updated format.
 
 Regions: I noticed that Eastern and Southern Africa, and Western and Central Africa regions were entered both as Uppercase and Lowercase. Since most of the entry is in uppercase letters I updated the lower case regions to uppercase.
 
-[<img src="images/--Region column with mix of lower and uppercase.png?raw=true"/>]
-[<img src="images/SOUTH ASIA.png?raw=true"/>]:#
-[<img src="images/--Standardize Country data entry.png?raw=true"/>]
-[<img src="images/AFRICA EAST.png?raw=true"/>]
-Updated format - All regions in uppercase
+<img src="images/--Region column with mix of lower and uppercase.png?raw=true"/> <img src="images/SOUTH ASIA.png?raw=true"/>
+
+<img src="images/--Standardize Country data entry.png?raw=true"/> <img src="images/AFRICA EAST.png?raw=true"/>
+                                                                    Updated format - All regions in uppercase
 
 **TRIM:** Checked for leading or trailing that could affect my search results spaces but there are none so Trimming is not needed
 
-[<img src="images/--Check for leadingtrailing spaces for Trimming.png?raw=true"/>]
-[<img src="images/integer.png?raw=true"/>]
+<img src="images/--Check for leadingtrailing spaces for Trimming.png?raw=true"/> <img src="images/integer.png?raw=true"/>
 
 **NULLS:** 
 There are Null values in the data set but none was removed or updated because the null values does not impact my analysis and some of the rows have other useful data points that I decided to retain.
@@ -90,12 +87,13 @@ I transformed raw numbers into understandable insights, revealing the maximum an
     - The Total and Average loan $ amount disbursed from 1961 to date (1st half of 2024): a **total of $18 trillion and an average of $34 million disbursed.**
     - Total number of Country with recorded disbursement(s) from 1961 to date (1st half of 2024): **135 countries** has benefitted from the program
     - The Total and average outstanding loan to date as of the 1st half of 2024: a **total of $24 trillion dollars at an average of $18 million is due back** to the World bank.
-    - Unique projects: a total of **8202 unique projects** has been sponsored so far.
 
-        [<img src="images/--total and average loan amount owed to IDA in US$.png?raw=true"/>]
-
-    - Total number of unique projects financed to date (1st half of 2024):
-        [<img src="images/--How many unique projects has been financed.png?raw=true"/>]
+      [<img src="images/--total and average loan amount owed to IDA in US$.png?raw=true"/>]
+      
+    - Unique projects: a total of **8202 unique projects** has been financed to date (1st half of 2024):
+      
+         <img src="images/--How many unique projects has been financed.png?raw=true"/>
+                
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 
