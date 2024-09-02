@@ -93,14 +93,15 @@ I transformed raw numbers into understandable insights, revealing the maximum an
 The amount disbursed was used in this query because the original principal amount was not always disbursed. To be able to group by the board approval year, I extracted the year from the timestamp data type, used the sum function rounded to 2 decimal places where the disbursed amount is not zero dollars.
 Overall the loan amount disbursed has seen an upward trend Y-O-Y with 2009 seeing the most loan disbursed at **1.9 trillion US$.**
 
-'--Historical Y-O-Y $ amount of loans disbursed
+"--Historical Y-O-Y $ amount of loans disbursed
 
-SELECT EXTRACT(YEAR FROM board_approval_date) board_approval_year, 
-SUM(ROUND(disbursed_amount_us$,2)) total_disbursed$
-FROM world_bank_loan
-WHERE disbursed_amount_us$ !=0
-GROUP BY board_approval_year
-ORDER BY board_approval_year;'
+    SELECT EXTRACT(YEAR FROM board_approval_date) board_approval_year, 
+    SUM(ROUND(disbursed_amount_us$,2)) total_disbursed$
+    FROM world_bank_loan
+    WHERE disbursed_amount_us$ !=0
+    GROUP BY board_approval_year
+    ORDER BY board_approval_year;
+"
 
 [<img src="images/FROM world_bank_loan.png?raw=true"/>]
 
