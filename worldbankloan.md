@@ -116,7 +116,8 @@ Using the aggregate max function in subquery the highest principal loan amount w
 
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
-[<img src="images/Av Income and Age.png?raw=true"/>]:# The completed Padma Bridge (beautiful)
+[<img src="images/Av Income and Age.png?raw=true"/>]:# 
+The completed Padma Bridge (beautiful)
 
 4. _The Top 3 countries and regions with the most cumulative disbursements:_
 
