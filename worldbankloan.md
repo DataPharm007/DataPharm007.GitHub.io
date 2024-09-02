@@ -33,8 +33,6 @@ _"ERROR: unterminated CSV quoted field CONTEXT: COPY loans_world_bank, line 1325
 I fixed the error by editing the raw text data with search and replace function.
 Data Import was successful
 
-[<img src="images/select  from loans_world_bank LIMIT 10.png?raw=true"/>]: #  
-[<img src="images/EASTERN AND SOUTHERN AFRI.png?raw=true"/>]: #
 
 #### Data cleaning:
 
@@ -150,7 +148,7 @@ Unique projects: a total of **8202 unique projects** has been financed to date (
     FROM world_bank_loan
     WHERE project_name !=' ';
                 
-[<img src="images/projects.png?raw=true"/>]:#
+<img src="images/projects.png?raw=true"/>
 
 
 2. _Historical Y-O-Y loan $ amount trends:_ 
@@ -168,7 +166,7 @@ Overall the loan amount disbursed has seen an upward trend Y-O-Y with 2009 seein
     ORDER BY board_approval_year;
 
 
-[<img src="images/FROM world_bank_loan.png?raw=true"/>]: #
+<img src="images/numeric.png?raw=true"/>
 
 <img src="images/numeric.png?raw=true"/>
 
@@ -200,14 +198,13 @@ Using the aggregate max function in subquery the highest principal loan amount w
     ) LIMIT 1;
 
 
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
-[<img src="images/Av Income and Age.png?raw=true"/>]:# 
-The completed Padma Bridge (beautiful)
+<img src="images/Largest loan.png?raw=true"/>
+[The completed Padma Bridge (beautiful)]<img src="images/Bangladesh bridge.png?raw=true"/>
+
 
 4. _The Top 3 countries and regions with the most cumulative disbursements:_
 
-Using aggregate function ‘sum’, order by, and group by to query the data I found the historical top 3 countries and regions with the most cumulative disbursed amount (US$): India, Bangladesh, and Pakistan in South Asia has the most disbursed $ amount since 1961 at 6.5 trillion US$, about 3 trillion US$, and 2.8 trillion US$ respectively.
+Using aggregate function ‘sum’, order by, and group by to query the data I found the historical top 3 countries and regions with the most cumulative disbursed amount (US$): **_India, Bangladesh, and Pakistan in South Asia_** has the most disbursed $ amount since 1961 at **_6.5 trillion US$, about 3 trillion US$, and 2.8 trillion US$ respectively._**
 
     --Top 3 countries with the most cumulative $ disbursed
     
