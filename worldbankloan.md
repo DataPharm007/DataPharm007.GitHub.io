@@ -33,7 +33,8 @@ _"ERROR: unterminated CSV quoted field CONTEXT: COPY loans_world_bank, line 1325
 I fixed the error by editing the raw text data with search and replace function.
 Data Import was successful
 
-[<img src="images/select  from loans_world_bank LIMIT 10.png?raw=true"/>]: #   [<img src="images/EASTERN AND SOUTHERN AFRI.png?raw=true"/>]: #
+[<img src="images/select  from loans_world_bank LIMIT 10.png?raw=true"/>]: #  
+[<img src="images/EASTERN AND SOUTHERN AFRI.png?raw=true"/>]: #
 
 #### Data cleaning:
 
@@ -80,7 +81,6 @@ I conducted a little research on Macedonia and found out the current name is ‘
 <img src="images/country_spelling a.png?raw=true"/>
                                                                     
 
-
 **Regions:** I noticed that Eastern and Southern Africa, and Western and Central Africa regions were entered both as Uppercase and Lowercase. Since most of the entry is in uppercase letters I updated the lower case regions to uppercase.
     --Region column with mix of lower and uppercase
     
@@ -88,15 +88,15 @@ I conducted a little research on Macedonia and found out the current name is ‘
     FROM world_bank_loan
     GROUP BY world_bank_loan.region;
 
-[<img src="images/--Region column with mix of lower and uppercase.png?raw=true"/>]: # <img src="images/SOUTH ASIA.png?raw=true"/>
+ <img src="images/SOUTH ASIA.png?raw=true"/>
 
     --Update region column to Uppercase
     
     UPDATE world_bank_loan
     SET region = UPPER(region);
 
-[<img src="images/--Update region column to Uppercase.png?raw=true"/>]: # <img src="images/AFRICA EAST.png?raw=true"/>
-                                                                        All regions in uppercase
+ <img src="images/AFRICA EAST.png?raw=true"/>
+ 
 
 **TRIM:** Checked for leading or trailing that could affect my search results spaces but there are none so Trimming is not needed
 
@@ -108,7 +108,7 @@ I conducted a little research on Macedonia and found out the current name is ‘
     FROM world_bank_loan
     WHERE LENGTH(country) <> LENGTH(TRIM(country));
     
-[<img src="images/--Check for leadingtrailing spaces for Trimming.png?raw=true"/>]: # <img src="images/integer.png?raw=true"/>
+ <img src="images/integer.png?raw=true"/>
 
 **NULLS:** 
 There are Null values in the data set but none was removed or updated because the null values does not impact my analysis and some of the rows have other useful data points that I decided to retain.
@@ -122,16 +122,34 @@ I transformed raw numbers into understandable insights, revealing the maximum an
     - The Total and Average loan $ amount disbursed from 1961 to date (1st half of 2024): a **total of $18 trillion and an average of $34 million disbursed.**
     - Total number of Country with recorded disbursement(s) from 1961 to date (1st half of 2024): **135 countries** has benefitted from the program
     - The Total and average outstanding loan to date as of the 1st half of 2024: a **total of $24 trillion dollars at an average of $18 million is due back** to the World bank.
+  
+    --Historical Overview from 1961 to 2023
+    --# of countries w/ loans, total # of loans issued
+    --total and average loan amount owed to IDA in US$ 
+    --total and average loan amount disbursed
+    
+    SELECT 
+    COUNT (DISTINCT country) total_country, 
+    COUNT (DISTINCT credit_number) total_transactions,
+    SUM(ROUND(disbursed_amount_us$,2)) total_disbursed$, 
+    ROUND(AVG(disbursed_amount_us$),2) avg_disbursed$, 
+    SUM(ROUND(due_to_ida_us$,2)) total_due$, 
+    ROUND(AVG(due_to_ida_us$),2) avg_due$
+    FROM world_bank_loan;
 
-<img src="images/--total and average loan amount owed to IDA in US$.png?raw=true"/> <img src="images/Total and average laons.png?raw=true"/>
+<img src="images/Total and average laons.png?raw=true"/>
 
       
     - Unique projects: a total of **8202 unique projects** has been financed to date (1st half of 2024):
-      
-         <img src="images/--How many unique projects has been financed.png?raw=true"/>
-                
 
+    --How many unique projects has been financed
+    
+    SELECT COUNT (DISTINCT project_name)
+    FROM world_bank_loan
+    WHERE project_name !=' ';
+                
 [<img src="images/projects.png?raw=true"/>]:#
+
 
 2. _Historical Y-O-Y loan $ amount trends:_ 
 
@@ -164,6 +182,22 @@ When ordered by the total disbursed the **Year 2009 saw the highest total loan d
 
 Using the aggregate max function in subquery the highest principal loan amount went to **Bangladesh in 2011 for the Padma Bridge project with a principal loan amount of $1.2 Trillion.**
 
+    ---largest loan made out; which country and project
+    --used subquery to bypass the 'group by' fx of an aggregate
+    
+    
+    SELECT board_approval_date::date, 
+    borrower, 
+    project_name,country, 
+    credit_number,
+    original_principal_amount_us$ 
+    FROM world_bank_loan
+    WHERE original_principal_amount_us$ = 
+    	(SELECT MAX(original_principal_amount_us$)
+    	FROM world_bank_loan
+    ) LIMIT 1;
+
+
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 [<img src="images/Av Income and Age.png?raw=true"/>]:# 
@@ -173,8 +207,15 @@ The completed Padma Bridge (beautiful)
 
 Using aggregate function ‘sum’, order by, and group by to query the data I found the historical top 3 countries and regions with the most cumulative disbursed amount (US$): India, Bangladesh, and Pakistan in South Asia has the most disbursed $ amount since 1961 at 6.5 trillion US$, about 3 trillion US$, and 2.8 trillion US$ respectively.
 
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
+    --Top 3 countries with the most cumulative $ disbursed
+    
+    SELECT country, region, SUM(disbursed_amount_us$) cumulative_disbursed_US$ 
+    FROM world_bank_loan
+    GROUP BY country, region
+    ORDER BY SUM(disbursed_amount_us$) DESC LIMIT 3;
+
+<img src="images/top 3 coutries.png?raw=true"/>
+
 
 ### Conclusion:
 
@@ -182,7 +223,6 @@ As I close the book on this tale, the key findings stand out like jewels in a cr
 
 Whether you're a data enthusiast, a financial wizard, or just curious about the analysis I’d like to hear your thoughts. Let's connect.
 
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
 
 
 [**Reference original dataset here**](https://finances.worldbank.org/Loans-and-Credits/IDA-Statement-Of-Credits-and-Grants-Historical-Dat/tdwh-3krx)  
