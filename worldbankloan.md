@@ -33,7 +33,7 @@ _"ERROR: unterminated CSV quoted field CONTEXT: COPY loans_world_bank, line 1325
 I fixed the error by editing the raw text data with search and replace function.
 Data Import was successful
 
-<img src="images/select  from loans_world_bank LIMIT 10.png?raw=true"/>    <img src="images/EASTERN AND SOUTHERN AFRI.png?raw=true"/>
+[<img src="images/select  from loans_world_bank LIMIT 10.png?raw=true"/>]: #   [<img src="images/EASTERN AND SOUTHERN AFRI.png?raw=true"/>]: #
 
 #### Data cleaning:
 
@@ -51,7 +51,7 @@ To begin the data cleaning process I created a **temporary table named world_ban
     FROM world_bank_loan LIMIT 100;
 
 
-<img src="images/--CREATE A TENP TABLE FOR CLEANING AND TRANSFORMATION.png?raw=true"/>
+[<img src="images/--CREATE A TENP TABLE FOR CLEANING AND TRANSFORMATION.png?raw=true"/>]: #
             
 
 A Quick Look through the table revealed some inconsistencies in country and region naming nomenclature.  
@@ -66,15 +66,33 @@ I conducted a little research on Macedonia and found out the current name is ‘
 
 
 **Regions:** I noticed that Eastern and Southern Africa, and Western and Central Africa regions were entered both as Uppercase and Lowercase. Since most of the entry is in uppercase letters I updated the lower case regions to uppercase.
+    --Region column with mix of lower and uppercase
+    
+    SELECT region
+    FROM world_bank_loan
+    GROUP BY world_bank_loan.region;
 
-<img src="images/--Region column with mix of lower and uppercase.png?raw=true"/> <img src="images/SOUTH ASIA.png?raw=true"/>
+[<img src="images/--Region column with mix of lower and uppercase.png?raw=true"/>]: # <img src="images/SOUTH ASIA.png?raw=true"/>
 
-<img src="images/--Update region column to Uppercase.png?raw=true"/> <img src="images/AFRICA EAST.png?raw=true"/>
+    --Update region column to Uppercase
+    
+    UPDATE world_bank_loan
+    SET region = UPPER(region);
+
+[<img src="images/--Update region column to Uppercase.png?raw=true"/>]: # <img src="images/AFRICA EAST.png?raw=true"/>
                                                                         All regions in uppercase
 
 **TRIM:** Checked for leading or trailing that could affect my search results spaces but there are none so Trimming is not needed
 
-<img src="images/--Check for leadingtrailing spaces for Trimming.png?raw=true"/> <img src="images/integer.png?raw=true"/>
+    --Check for leading/trailing spaces for Trimming
+    
+    SELECT country, 
+           LENGTH(country) AS original_length,
+           LENGTH(TRIM(country)) AS trimmed_length
+    FROM world_bank_loan
+    WHERE LENGTH(country) <> LENGTH(TRIM(country));
+    
+[<img src="images/--Check for leadingtrailing spaces for Trimming.png?raw=true"/>]: # <img src="images/integer.png?raw=true"/>
 
 **NULLS:** 
 There are Null values in the data set but none was removed or updated because the null values does not impact my analysis and some of the rows have other useful data points that I decided to retain.
