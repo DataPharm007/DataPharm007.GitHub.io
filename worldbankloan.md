@@ -4,15 +4,15 @@
 
 In the mystical world of global finance, few things hold as much power as the loans granted by the World Bank. Embark on a journey through the fantastical world of data where you'll uncover how the World Bank's treasure trove has been distributed across the globe. These are not just numbers—they’re the lifeblood of nations, enabling growth, development, and prosperity. 
 
-This project was chosen to delve into questions like: 
+**This project was chosen to delve into questions like:** 
 
 [Be sure to follow *The Interesting Project Template* as shown in]: # [**The Data Science Project Studio**]: #[(https://www.datacareerjumpstart.com/products/the-data-science-project-studio/categories/2150357707/posts/2158441592). ]: #
 
 1. What does the World bank International Development Association (IDA) loan program from 1961 to 2024 looks like: a descriptive analysis
-  - The Total and Average loan $ amount disbursed from 1961 to date (1st half of 2024): a total of $18 trillion and an average of $34 million disbursed
-  -  Total number of Country with recorded disbursement(s) from 1961 to date (1st half of 2024): **135 countries**
-  -  Total number of unique projects financed to date (1st half of 2024): 8202 unique projects sponsored
-  -  The Total and average outstanding loan as of the 1st half of 2024: a total of **$24 trillion dollars** at an **average of $18 million** is due back to the World bank.
+    - The Total and Average loan $ amount disbursed from 1961 to date (1st half of 2024): a total of $18 trillion and an average of $34 million disbursed
+    -  Total number of Country with recorded disbursement(s) from 1961 to date (1st half of 2024): **135 countries**
+    -  Total number of unique projects financed to date (1st half of 2024): 8202 unique projects sponsored
+    -  The Total and average outstanding loan as of the 1st half of 2024: a total of **$24 trillion dollars** at an **average of $18 million** is due back to the World bank.
 2. Historical Y-O-Y loan $ amount trends: overall the loan amount has seen an **upward trend Y-O-Y** with 2009 seeing the most loan disbursed at 1.9 trillion US$
 3. The country, project name and year with the highest principal loan amount: **Bangladesh in 2011 embarked on the Padma Bridge project with principal loan amount of $1.2 Trillion.**
 4. Historical Top 3 countries and regions with the most disbursed amount (Cumulative US$): **India, Bangladesh, and Pakistan.**
@@ -31,6 +31,7 @@ Right off the start I Encountered unterminated quotes error:
 
 I fixed the error by editing the raw text data with search and replace function.
 Data Import was successful
+
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
@@ -39,6 +40,7 @@ Data Import was successful
 
 The adventure began with an exploration of the dataset, where I cleaned and standardized the information, ensuring that every piece of data fit neatly into our story.
 To begin the data cleaning process I created a **temporary table named world_bank_loan** in case I need to delete unwanted columns. That way the original data is still available if needed.
+
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
@@ -75,7 +77,7 @@ Regions: I noticed that Eastern and Southern Africa, and Western and Central Afr
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 
-NULLS: 
+**NULLS:** 
 There are Null values in the data set but none was removed or updated because the null values does not impact my analysis and some of the rows have other useful data points that I decided to retain.
 
 ### The Analysis:
@@ -84,10 +86,10 @@ I transformed raw numbers into understandable insights, revealing the maximum an
 **Here are my discoveries:**
 
 1. _What does the World bank International Development Association (IDA) loan program from 1961 to 2024 looks like: descriptive analysis was conducted using aggregate functions (Sum and Averages), Count, and Distinct functions._
-  - The Total and Average loan $ amount disbursed from 1961 to date (1st half of 2024): a **total of $18 trillion and an average of $34 million disbursed.**
-  - Total number of Country with recorded disbursement(s) from 1961 to date (1st half of 2024): **135 countries** has benefitted from the program
-  - The Total and average outstanding loan to date as of the 1st half of 2024: a **total of $24 trillion dollars at an average of $18 million is due back** to the World bank.
-  - Unique projects: a total of **8202 unique projects** has been sponsored so far.
+    - The Total and Average loan $ amount disbursed from 1961 to date (1st half of 2024): a **total of $18 trillion and an average of $34 million disbursed.**
+    - Total number of Country with recorded disbursement(s) from 1961 to date (1st half of 2024): **135 countries** has benefitted from the program
+    - The Total and average outstanding loan to date as of the 1st half of 2024: a **total of $24 trillion dollars at an average of $18 million is due back** to the World bank.
+    - Unique projects: a total of **8202 unique projects** has been sponsored so far.
 
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
