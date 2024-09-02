@@ -172,11 +172,20 @@ Overall the loan amount disbursed has seen an upward trend Y-O-Y with 2009 seein
 
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
+
 
 When ordered by the total disbursed the **Year 2009 saw the highest total loan disbursed** in any year at a whooping **1.9 Trillion US dollars.** Followed closely by **year 2007 at $1.84 Trillion** and in third place is the **year 2010 at $1.77 Trillion.**
 
+    --Historical Y-O-Y $ amount of loans disbursed
+    
+    SELECT EXTRACT(YEAR FROM board_approval_date) board_approval_year, 
+    SUM(ROUND(disbursed_amount_us$,2)) total_disbursed$
+    FROM world_bank_loan
+    WHERE disbursed_amount_us$ !=0
+    GROUP BY board_approval_year
+    ORDER BY SUM(ROUND(disbursed_amount_us$,2)) DESC;
 
+[<img src="images/Av Income and Age.png?raw=true"/>]:#
 
 3. _The country, project name and year with the highest principal loan amount:_
 
