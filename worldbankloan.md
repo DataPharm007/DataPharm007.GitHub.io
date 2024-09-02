@@ -59,10 +59,26 @@ A Quick Look through the table revealed some inconsistencies in country and regi
 Vietnam was entered as **‘Vietnam’, and ‘Viet Nam’**; **‘North Macedonia as Macedonia', 'Macedonia, former Yugoslav Republic of', 'Macedonia, former Yugoslav Republic’.**
 I conducted a little research on Macedonia and found out the current name is ‘North Macedonia’. The country entries was standardized using CASE..WHEN query to correct the entries (Only Vietnam / Viet Nam shown).
 
-<img src="images/--Standardize Country data entry.png?raw=true"/> <img src="images/Viet Nam.png?raw=true"/>
+    --Identifying incorrectly spelt Viet Nam
+    
+    SELECT COUNT (country), country AS country_Spelling
+    FROM world_bank_loan
+    WHERE country IN ('Vietnam','Viet Nam')
+    Group BY country;
 
-<img src="images/UPDATE world_bank_loan.png?raw=true"/> <img src="images/country_spelling a.png?raw=true"/>
-                                                                        Updated format.
+<img src="images/Viet Nam.png?raw=true"/>
+
+    --Update 'Viet Nam' to 'Vietnam'
+    
+    UPDATE world_bank_loan
+    SET country = CASE country
+    	WHEN 'Viet Nam' THEN 'Vietnam'
+    	ELSE country
+    END; 
+
+
+<img src="images/country_spelling a.png?raw=true"/>
+                                                                    
 
 
 **Regions:** I noticed that Eastern and Southern Africa, and Western and Central Africa regions were entered both as Uppercase and Lowercase. Since most of the entry is in uppercase letters I updated the lower case regions to uppercase.
