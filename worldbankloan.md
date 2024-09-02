@@ -69,7 +69,7 @@ Regions: I noticed that Eastern and Southern Africa, and Western and Central Afr
 <img src="images/--Region column with mix of lower and uppercase.png?raw=true"/> <img src="images/SOUTH ASIA.png?raw=true"/>
 
 <img src="images/--Standardize Country data entry.png?raw=true"/> <img src="images/AFRICA EAST.png?raw=true"/>
-                                                                    Updated format - All regions in uppercase
+                                                            Updated format - All regions in uppercase
 
 **TRIM:** Checked for leading or trailing that could affect my search results spaces but there are none so Trimming is not needed
 
