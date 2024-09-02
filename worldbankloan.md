@@ -33,38 +33,28 @@ _"ERROR: unterminated CSV quoted field CONTEXT: COPY loans_world_bank, line 1325
 I fixed the error by editing the raw text data with search and replace function.
 Data Import was successful
 
-<img src="images/select  from loans_world_bank LIMIT 10.png?raw=true"/> <img src="images/EASTERN AND SOUTHERN AFRI.png?raw=true"/>
+<img src="images/select  from loans_world_bank LIMIT 10.png?raw=true"/>    <img src="images/EASTERN AND SOUTHERN AFRI.png?raw=true"/>
 
 #### Data cleaning:
 
 The adventure began with an exploration of the dataset, where I cleaned and standardized the information, ensuring that every piece of data fit neatly into our story.
 To begin the data cleaning process I created a **temporary table named world_bank_loan** in case I need to delete unwanted columns. That way the original data is still available if needed.
 
-<img src="images/--CREATE A TENP TABLE FOR CLEANING AND TRANSFORMATION.png?raw=true"/>
-
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
+            <img src="images/--CREATE A TENP TABLE FOR CLEANING AND TRANSFORMATION.png?raw=true"/>
+            
 
 A Quick Look through the table revealed some inconsistencies in country and region naming nomenclature.  
 
 Vietnam was entered as **‘Vietnam’, and ‘Viet Nam’**; **‘North Macedonia as Macedonia', 'Macedonia, former Yugoslav Republic of', 'Macedonia, former Yugoslav Republic’.**
-I conducted a little research on Macedonia and found out the current name is ‘North Macedonia’; The other versions were updated using CASE..WHEN query to correct the entries.
+I conducted a little research on Macedonia and found out the current name is ‘North Macedonia’. The country entries was standardized using CASE..WHEN query to correct the entries (Only Vietnam / Viet Nam shown).
 
 <img src="images/--Standardize Country data entry.png?raw=true"/> <img src="images/Viet Nam.png?raw=true"/>
 
 <img src="images/UPDATE world_bank_loan.png?raw=true"/> <img src="images/country_spelling a.png?raw=true"/>
                                                                         Updated format.
 
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
 
-Regions: I noticed that Eastern and Southern Africa, and Western and Central Africa regions were entered both as Uppercase and Lowercase. Since most of the entry is in uppercase letters I updated the lower case regions to uppercase.
+**Regions:** I noticed that Eastern and Southern Africa, and Western and Central Africa regions were entered both as Uppercase and Lowercase. Since most of the entry is in uppercase letters I updated the lower case regions to uppercase.
 
 <img src="images/--Region column with mix of lower and uppercase.png?raw=true"/> <img src="images/SOUTH ASIA.png?raw=true"/>
 
@@ -88,14 +78,15 @@ I transformed raw numbers into understandable insights, revealing the maximum an
     - Total number of Country with recorded disbursement(s) from 1961 to date (1st half of 2024): **135 countries** has benefitted from the program
     - The Total and average outstanding loan to date as of the 1st half of 2024: a **total of $24 trillion dollars at an average of $18 million is due back** to the World bank.
 
-      [<img src="images/--total and average loan amount owed to IDA in US$.png?raw=true"/>]
+<img src="images/--total and average loan amount owed to IDA in US$.png?raw=true"/> <img src="images/Total and average laons.png?raw=true"/>
+
       
     - Unique projects: a total of **8202 unique projects** has been financed to date (1st half of 2024):
       
          <img src="images/--How many unique projects has been financed.png?raw=true"/>
                 
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
-[<img src="images/Av Income and Age.png?raw=true"/>]:#
+
+[<img src="images/projects.png?raw=true"/>]:#
 
 2. _Historical Y-O-Y loan $ amount trends:_ 
 
