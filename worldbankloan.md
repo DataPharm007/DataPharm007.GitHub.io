@@ -123,19 +123,19 @@ I transformed raw numbers into understandable insights, revealing the maximum an
     - Total number of Country with recorded disbursement(s) from 1961 to date (1st half of 2024): **135 countries** has benefitted from the program
     - The Total and average outstanding loan to date as of the 1st half of 2024: a **total of $24 trillion dollars at an average of $18 million is due back** to the World bank.
   
-        --Historical Overview from 1961 to 2023
-        --Num. of countries with loans, total Num of loans issued
-        --total and average loan amount owed to IDA in US$ 
-        --total and average loan amount disbursed
-        
-        SELECT 
-        COUNT (DISTINCT country) total_country, 
-        COUNT (DISTINCT credit_number) total_transactions,
-        SUM(ROUND(disbursed_amount_us$,2)) total_disbursed$, 
-        ROUND(AVG(disbursed_amount_us$),2) avg_disbursed$, 
-        SUM(ROUND(due_to_ida_us$,2)) total_due$, 
-        ROUND(AVG(due_to_ida_us$),2) avg_due$
-        FROM world_bank_loan;
+    '--Historical Overview from 1961 to 2023
+    --Num. of countries with loans, total Num of loans issued
+    --total and average loan amount owed to IDA in US$ 
+    --total and average loan amount disbursed
+    
+    SELECT 
+    COUNT (DISTINCT country) total_country, 
+    COUNT (DISTINCT credit_number) total_transactions,
+    SUM(ROUND(disbursed_amount_us$,2)) total_disbursed$, 
+    ROUND(AVG(disbursed_amount_us$),2) avg_disbursed$, 
+    SUM(ROUND(due_to_ida_us$,2)) total_due$, 
+    ROUND(AVG(due_to_ida_us$),2) avg_due$
+    FROM world_bank_loan;'
 
 <img src="images/Total and average laons.png?raw=true"/>
 
@@ -143,11 +143,11 @@ I transformed raw numbers into understandable insights, revealing the maximum an
 - Unique projects: a total of **8202 unique projects** has been financed to date (1st half of 2024):
 
 
-    --How many unique projects has been financed
+    '--How many unique projects has been financed
     
     SELECT COUNT (DISTINCT project_name)
     FROM world_bank_loan
-    WHERE project_name !=' ';
+    WHERE project_name !=' ';'
                 
 [<img src="images/projects.png?raw=true"/>]:#
 
