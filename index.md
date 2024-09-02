@@ -21,14 +21,14 @@ In this case study, I analyzed the State of Massachusetts education data. The st
 
 [Click to listen.](https://www.linkedin.com/posts/dr-joseph-adebayo_visualization-report-on-massachusetts-education-activity-7229480881587961856-gRnr?utm_source=share&utm_medium=member_desktop) 
 
-* Thank you.
+Thank you.
 ---
 
 ### [The World bank's Moolah Movements](worldbankloan.md)
 <img src="images/world bank map.png?raw=true"/>
 
-* In the mystical world of global finance, few things hold as much power as the loans granted by the World Bank. Embark on a journey through the fantastical world of data where you'll uncover how the World Bank's treasure trove has been distributed across the globe...
-* 
+In the mystical world of global finance, few things hold as much power as the loans granted by the World Bank. Embark on a journey through the fantastical world of data where you'll uncover how the World Bank's treasure trove has been distributed across the globe...
+ 
 
 ---
 ### More Projects Coming Soon
