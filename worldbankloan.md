@@ -40,7 +40,18 @@ Data Import was successful
 The adventure began with an exploration of the dataset, where I cleaned and standardized the information, ensuring that every piece of data fit neatly into our story.
 To begin the data cleaning process I created a **temporary table named world_bank_loan** in case I need to delete unwanted columns. That way the original data is still available if needed.
 
-            <img src="images/--CREATE A TENP TABLE FOR CLEANING AND TRANSFORMATION.png?raw=true"/>
+    --CREATE A TEMP TABLE FOR CLEANING AND TRANSFORMATION
+    
+    CREATE TABLE world_bank_loan AS
+    SELECT *
+    FROM loans_world_bank;
+
+    --View created Table
+    SELECT * 
+    FROM world_bank_loan LIMIT 100;
+
+
+<img src="images/--CREATE A TENP TABLE FOR CLEANING AND TRANSFORMATION.png?raw=true"/>
             
 
 A Quick Look through the table revealed some inconsistencies in country and region naming nomenclature.  
