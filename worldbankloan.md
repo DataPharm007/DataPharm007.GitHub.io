@@ -1,4 +1,4 @@
-[## The World Bank's Moolah Movements!]:#<img src="images/LinkedIn Article (3).png?raw=true"/>
+[## The World Bank's Moolah Movements!]: # <img src="images/LinkedIn Article (3).png?raw=true"/>
 
 ### Introduction:
 
