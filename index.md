@@ -22,7 +22,7 @@ In this case study, I analyzed the State of Massachusetts education data. The st
 [Click to listen.](https://www.linkedin.com/posts/dr-joseph-adebayo_visualization-report-on-massachusetts-education-activity-7229480881587961856-gRnr?utm_source=share&utm_medium=member_desktop) 
 ---
 ### More Projects Coming Soon
-Thank you for your patience!🙂
+Thank you for visiting my Portfolio!🙂
  
 
 [---]:#
