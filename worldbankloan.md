@@ -148,7 +148,7 @@ Unique projects: a total of **8202 unique projects** has been financed to date (
     FROM world_bank_loan
     WHERE project_name !=' ';
                 
-<img src="images/projects.png?raw=true"/>
+<img src="images/project count.png?raw=true"/>
 
 
 2. _Historical Y-O-Y loan $ amount trends:_ 
@@ -166,7 +166,7 @@ Overall the loan amount disbursed has seen an upward trend Y-O-Y with 2009 seein
     ORDER BY board_approval_year;
 
 
-<img src="images/numeric.png?raw=true"/>
+<img src="images/y-o-y trend.png?raw=true"/>
 
 <img src="images/numeric.png?raw=true"/>
 
