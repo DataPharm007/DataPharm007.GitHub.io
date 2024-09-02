@@ -119,9 +119,9 @@ I transformed raw numbers into understandable insights, revealing the maximum an
 **Here are my discoveries:**
 
 1. _What does the World bank International Development Association (IDA) loan program from 1961 to 2024 looks like: descriptive analysis was conducted using aggregate functions (Sum and Averages), Count, and Distinct functions._
-- The Total and Average loan $ amount disbursed from 1961 to date (1st half of 2024): a **total of $18 trillion and an average of $34 million disbursed.**
-- Total number of Country with recorded disbursement(s) from 1961 to date (1st half of 2024): **135 countries** has benefitted from the program
-- The Total and average outstanding loan to date as of the 1st half of 2024: a **total of $24 trillion dollars at an average of $18 million is due back** to the World bank.
+The Total and Average loan $ amount disbursed from 1961 to date (1st half of 2024): a **total of $18 trillion and an average of $34 million disbursed.**
+Total number of Country with recorded disbursement(s) from 1961 to date (1st half of 2024): **135 countries** has benefitted from the program
+The Total and average outstanding loan to date as of the 1st half of 2024: a **total of $24 trillion dollars at an average of $18 million is due back** to the World bank.
   
     --Historical Overview from 1961 to 2023
     --Num. of countries with loans, total Num of loans issued
@@ -139,8 +139,7 @@ I transformed raw numbers into understandable insights, revealing the maximum an
 
 <img src="images/Total and average laons.png?raw=true"/>
 
-      
-- Unique projects: a total of **8202 unique projects** has been financed to date (1st half of 2024):
+Unique projects: a total of **8202 unique projects** has been financed to date (1st half of 2024):
 
     --How many unique projects has been financed
     
