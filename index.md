@@ -22,7 +22,7 @@ In this case study, I analyzed the State of Massachusetts education data. The st
 [Click to listen.](https://www.linkedin.com/posts/dr-joseph-adebayo_visualization-report-on-massachusetts-education-activity-7229480881587961856-gRnr?utm_source=share&utm_medium=member_desktop) 
 ---
 
-[### [The World bank's Moolah Movements](Excel-iFood Project.md)]: #
+### [The World bank's Moolah Movements](worldbankloan.md)
 [<img src="images/Marital Status by Age group.png?raw=true"/>]: #
 
 [In this assigned project, I looked for the reason(s) why iFood, a Brazil food delivery services was incurring loss despite several campaigns and having 83% of the market share. Is it that they have reached their market cap? Is it that the wrong demographics were being targeted in the campaign, or is it that the campaign missed the mark on what people are really needing? Come explore with me.]: #
