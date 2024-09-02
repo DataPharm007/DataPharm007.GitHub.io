@@ -124,7 +124,7 @@ I transformed raw numbers into understandable insights, revealing the maximum an
     - The Total and average outstanding loan to date as of the 1st half of 2024: a **total of $24 trillion dollars at an average of $18 million is due back** to the World bank.
   
         --Historical Overview from 1961 to 2023
-        --# of countries w/ loans, total # of loans issued
+        --Num. of countries with loans, total Num of loans issued
         --total and average loan amount owed to IDA in US$ 
         --total and average loan amount disbursed
         
@@ -140,7 +140,8 @@ I transformed raw numbers into understandable insights, revealing the maximum an
 <img src="images/Total and average laons.png?raw=true"/>
 
       
-    - Unique projects: a total of **8202 unique projects** has been financed to date (1st half of 2024):
+- Unique projects: a total of **8202 unique projects** has been financed to date (1st half of 2024):
+
 
     --How many unique projects has been financed
     
