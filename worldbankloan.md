@@ -119,11 +119,11 @@ I transformed raw numbers into understandable insights, revealing the maximum an
 **Here are my discoveries:**
 
 1. _What does the World bank International Development Association (IDA) loan program from 1961 to 2024 looks like: descriptive analysis was conducted using aggregate functions (Sum and Averages), Count, and Distinct functions._
-    - The Total and Average loan $ amount disbursed from 1961 to date (1st half of 2024): a **total of $18 trillion and an average of $34 million disbursed.**
-    - Total number of Country with recorded disbursement(s) from 1961 to date (1st half of 2024): **135 countries** has benefitted from the program
-    - The Total and average outstanding loan to date as of the 1st half of 2024: a **total of $24 trillion dollars at an average of $18 million is due back** to the World bank.
+- The Total and Average loan $ amount disbursed from 1961 to date (1st half of 2024): a **total of $18 trillion and an average of $34 million disbursed.**
+- Total number of Country with recorded disbursement(s) from 1961 to date (1st half of 2024): **135 countries** has benefitted from the program
+- The Total and average outstanding loan to date as of the 1st half of 2024: a **total of $24 trillion dollars at an average of $18 million is due back** to the World bank.
   
-    '--Historical Overview from 1961 to 2023
+    --Historical Overview from 1961 to 2023
     --Num. of countries with loans, total Num of loans issued
     --total and average loan amount owed to IDA in US$ 
     --total and average loan amount disbursed
@@ -135,19 +135,18 @@ I transformed raw numbers into understandable insights, revealing the maximum an
     ROUND(AVG(disbursed_amount_us$),2) avg_disbursed$, 
     SUM(ROUND(due_to_ida_us$,2)) total_due$, 
     ROUND(AVG(due_to_ida_us$),2) avg_due$
-    FROM world_bank_loan;'
+    FROM world_bank_loan;
 
 <img src="images/Total and average laons.png?raw=true"/>
 
       
 - Unique projects: a total of **8202 unique projects** has been financed to date (1st half of 2024):
 
-
-    '--How many unique projects has been financed
+    --How many unique projects has been financed
     
     SELECT COUNT (DISTINCT project_name)
     FROM world_bank_loan
-    WHERE project_name !=' ';'
+    WHERE project_name !=' ';
                 
 [<img src="images/projects.png?raw=true"/>]:#
 
@@ -167,9 +166,9 @@ Overall the loan amount disbursed has seen an upward trend Y-O-Y with 2009 seein
     ORDER BY board_approval_year;
 
 
-[<img src="images/FROM world_bank_loan.png?raw=true"/>]
+[<img src="images/FROM world_bank_loan.png?raw=true"/>]: #
 
-[<img src="images/numeric.png?raw=true"/>]
+<img src="images/numeric.png?raw=true"/>
 
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
 [<img src="images/Av Income and Age.png?raw=true"/>]:#
