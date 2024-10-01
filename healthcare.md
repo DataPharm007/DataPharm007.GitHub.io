@@ -41,14 +41,14 @@ The analysis involved several stages to identify key insights:
 1. Cleaning and Transforming the Data: We standardized the entries, and converted categorical values such as number of procedures and lab procedures, and number of medications into numeric formats for better aggregation. Using the `Alter Table and Modify columns’ query.
 2. A general overview of the time spent in the hospital when admitted.
 
-   '--Used RPAD function to generate an Histogram.
+   `--Used RPAD function to generate an Histogram.
    USE patient;
    SELECT ROUND(time_in_hospital, 1) AS bucket,
    COUNT(*) AS count,
    RPAD('', COUNT(*)/100, '!') AS bar
    FROM health
    GROUP BY bucket
-   ORDER BY bucket;'
+   ORDER BY bucket;`
 
 The analysis shows that most patients spends between 1 to 4 days in the hospital. Overall the majority of the patients spends between 1 to 7 days in the hospital. 
 
@@ -65,7 +65,7 @@ The analysis shows that most patients spends between 1 to 4 days in the hospital
             
 4. Analyzing Payer and medical specialty Influence: I grouped readmission rates by payer_code and medical_specialty to see if certain insurance types or medical specialty correlated with higher or lower rates of readmission.
 
-   SELECT 
+   `SELECT 
        payer_code,
        COUNT(*) AS total_patients,
        SUM(CASE 
@@ -83,7 +83,7 @@ The analysis shows that most patients spends between 1 to 4 days in the hospital
    GROUP BY 
        payer_code
    ORDER BY 
-       readmission_rate_percentage DESC;
+       readmission_rate_percentage DESC;`
 
 With the most payers having about 50% of readmission rate digging deeper into the hospital processes is recommended.
 This led to similar analysis of the data grouped by the medical specialty.
