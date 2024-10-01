@@ -52,6 +52,7 @@ The analysis involved several stages to identify key insights:
    GROUP BY bucket
    ORDER BY bucket;
    ```
+<img src="images/diabetic histogram.png?raw=true"/>
 
 The analysis shows that most patients spends between 1 to 4 days in the hospital. Overall the majority of the patients spends between 1 to 7 days in the hospital. 
 
@@ -65,7 +66,8 @@ The analysis shows that most patients spends between 1 to 4 days in the hospital
    GROUP BY readmitted;
 ```
 
-[<img src="images/--CREATE A TENP TABLE FOR CLEANING AND TRANSFORMATION.png?raw=true"/>]: #
+<img src="images/readmitted AVG(num_medications).png?raw=true"/>
+
             
 - Analyzing Payer and medical specialty Influence: I grouped readmission rates by payer_code and medical_specialty to see if certain insurance types or medical specialty correlated with higher or lower rates of readmission.
 
