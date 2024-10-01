@@ -64,8 +64,8 @@ The analysis shows that most patients spends between 1 to 4 days in the hospital
 [<img src="images/--CREATE A TENP TABLE FOR CLEANING AND TRANSFORMATION.png?raw=true"/>]: #
             
 4. Analyzing Payer and medical specialty Influence: I grouped readmission rates by payer_code and medical_specialty to see if certain insurance types or medical specialty correlated with higher or lower rates of readmission.
-
-   `SELECT 
+`
+   SELECT 
        payer_code,
        COUNT(*) AS total_patients,
        SUM(CASE 
@@ -83,8 +83,8 @@ The analysis shows that most patients spends between 1 to 4 days in the hospital
    GROUP BY 
        payer_code
    ORDER BY 
-       readmission_rate_percentage DESC;`
-
+       readmission_rate_percentage DESC;
+`
 With the most payers having about 50% of readmission rate digging deeper into the hospital processes is recommended.
 This led to similar analysis of the data grouped by the medical specialty.
 
