@@ -1,4 +1,4 @@
-## Healthcare: Analyzing Readmission Rates Among Diabetic Patients" - An SQL Project! <img src="images/LinkedIn Article (3).png?raw=true"/>
+## Healthcare: Analyzing Readmission Rates Among Diabetic Patients" - An SQL Project! <img src="images/LinkedIn Article (4).png?raw=true"/>
 
 ### Introduction:
 
