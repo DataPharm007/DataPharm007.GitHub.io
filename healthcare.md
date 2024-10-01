@@ -142,7 +142,7 @@ The analysis indicated there are no differences in the way patients are treated 
 
 - The management wants a report in the following format:
 
-"Patient [patient_nbr] was [RACE] and was [READMISSION STATUS]. They had [num_ medications and [num_lab_procedures.]”
+   _"Patient [patient_nbr] was [RACE] and was [READMISSION STATUS]. They had [num_ medications and [num_lab_procedures.]”_
 
 I used a combination of CASE WHEN, CONCAT, and JOINS to be able to accomplish this.
 
