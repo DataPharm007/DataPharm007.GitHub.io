@@ -33,10 +33,10 @@ In the mystical world of global finance, few things hold as much power as the lo
 ---
 
 ### [Healthcare: Analyzing Readmission Rates Among Diabetic Patients](healthcare.md)
-<img src="images/linkedIn Article (4).png?raw=true"/>
+<img src="images/LinkedIn Article (4).png?raw=true"/>
 
 In the mystical world of global finance, few things hold as much power as the loans granted by the World Bank. Embark on a journey through the fantastical world of data where you'll uncover how the World Bank's treasure trove has been distributed across the globe...)
-<img src="images/world bank map.png?raw=true"/>
+
 
 In the mystical world of global finance, few things hold as much power as the loans granted by the World Bank. Embark on a journey through the fantastical world of data where you'll uncover how the World Bank's treasure trove has been distributed across the globe...
 ---
