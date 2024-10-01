@@ -11,13 +11,13 @@ These readmissions, often within a short period after discharge, indicate potent
 
 [Be sure to follow *The Interesting Project Template* as shown in]: # [**The Data Science Project Studio**]: #[(https://www.datacareerjumpstart.com/products/the-data-science-project-studio/categories/2150357707/posts/2158441592). ]: #
 
-1. What is the distribution of patients stay in the hospital? Hospital goal is 7 days or less: goal met; Most patients were able to be discharged after 3 days of hospital stay.
-2. Provide a list of the medical specialties that have an average number of procedure count above 2.5 with the total procedure count above 50: The analysis shows 3 different surgery specialties, radiologist, and Cardiologist.
-3. Is the hospital treating patients of different races differently, specifically with the number of lab procedures done? At an average of ~43 procedures no differences were observed in the average number of lab procedures done between races.
+1. What is the distribution of patients stay in the hospital? Hospital goal is 7 days or less: goal met; _Most patients were able to be discharged after 3 days of hospital stay._
+2. Provide a list of the medical specialties that have an average number of procedure count above 2.5 with the total procedure count above 50: _The analysis shows 3 different surgery specialties, radiologist, and Cardiologist._
+3. Is the hospital treating patients of different races differently, specifically with the number of lab procedures done? _At an average of ~43 procedures no differences were observed in the average number of lab procedures done between races._
 4. How do payer types affect patient outcomes?
-    * Is there a correlation between insurance types (payer codes) and readmission rates? Most payer have a readmission rate of almost 50%.
+    * Is there a correlation between insurance types (payer codes) and readmission rates? _Most payer have a readmission rate of almost 50%._
 5. What specialties have the lowest readmission rates?
-    * Are there certain medical specialties that see more frequent readmissions? Can those specialties adjust their care protocols to reduce these rates? The endocrinologist has one of the lowest rates of readmission as expected. Other specialist should write for a consult with an endocrinologist before their diabetic patients gets discharged.
+    * Are there certain medical specialties that see more frequent readmissions? Can those specialties adjust their care protocols to reduce these rates? _The endocrinologist has one of the lowest rates of readmission as expected. Other specialist should write for a consult with an endocrinologist before their diabetic patients gets discharged._
 
 ### Why This Project?
 
@@ -41,6 +41,7 @@ The analysis involved several stages to identify key insights:
 - Cleaning and Transforming the Data: We standardized the entries, and converted categorical values such as number of procedures and lab procedures, and number of medications into numeric formats for better aggregation. Using the `Alter Table and Modify columns’ query.
 - A general overview of the time spent in the hospital when admitted.
 
+```
    --Used RPAD function to generate an Histogram
 
    USE patient;
@@ -50,24 +51,25 @@ The analysis involved several stages to identify key insights:
    FROM health
    GROUP BY bucket
    ORDER BY bucket;
-   
+   ```
 
 The analysis shows that most patients spends between 1 to 4 days in the hospital. Overall the majority of the patients spends between 1 to 7 days in the hospital. 
 
 - Segmentation of Readmitted Patients: I categorized patients by their readmission status (No, <30, >30) and examined how each patient group differed in terms of the number of medications, and procedures. The average number of medications and number of procedures are similar across the 3 readmission status.
 
-
+``` SQL
    --Average number of medications and procedures by readmission status
    
    SELECT readmitted, AVG(num_medications), AVG(num_procedures)
    FROM health
    GROUP BY readmitted;
-
+```
 
 [<img src="images/--CREATE A TENP TABLE FOR CLEANING AND TRANSFORMATION.png?raw=true"/>]: #
             
 - Analyzing Payer and medical specialty Influence: I grouped readmission rates by payer_code and medical_specialty to see if certain insurance types or medical specialty correlated with higher or lower rates of readmission.
 
+```
    --Readmission rates by payer_code
    
    SELECT 
@@ -89,7 +91,7 @@ The analysis shows that most patients spends between 1 to 4 days in the hospital
        payer_code
    ORDER BY 
        readmission_rate_percentage DESC;
-
+```
 
 With the most payers having about 50% of readmission rate digging deeper into the hospital processes is recommended.
 This led to similar analysis of the data grouped by the medical specialty.
