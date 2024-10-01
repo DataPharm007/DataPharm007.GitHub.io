@@ -38,12 +38,11 @@ The database have 2 separate tables named: ‘health’ and ‘demographics’. 
 #### Analysis Conducted:
 
 The analysis involved several stages to identify key insights:
-1. Cleaning and Transforming the Data: We standardized the entries, and converted categorical values such as number of procedures and lab procedures, and number of medications into numeric formats for better aggregation. Using the `Alter Table and Modify columns’ query.
-2. A general overview of the time spent in the hospital when admitted.
-
+- Cleaning and Transforming the Data: We standardized the entries, and converted categorical values such as number of procedures and lab procedures, and number of medications into numeric formats for better aggregation. Using the `Alter Table and Modify columns’ query.
+- A general overview of the time spent in the hospital when admitted.
 
    --Used RPAD function to generate an Histogram
-   
+
    USE patient;
    SELECT ROUND(time_in_hospital, 1) AS bucket,
    COUNT(*) AS count,
@@ -55,7 +54,7 @@ The analysis involved several stages to identify key insights:
 
 The analysis shows that most patients spends between 1 to 4 days in the hospital. Overall the majority of the patients spends between 1 to 7 days in the hospital. 
 
-3. Segmentation of Readmitted Patients: I categorized patients by their readmission status (No, <30, >30) and examined how each patient group differed in terms of the number of medications, and procedures. The average number of medications and number of procedures are similar across the 3 readmission status.
+- Segmentation of Readmitted Patients: I categorized patients by their readmission status (No, <30, >30) and examined how each patient group differed in terms of the number of medications, and procedures. The average number of medications and number of procedures are similar across the 3 readmission status.
 
 
    --Average number of medications and procedures by readmission status
@@ -67,7 +66,7 @@ The analysis shows that most patients spends between 1 to 4 days in the hospital
 
 [<img src="images/--CREATE A TENP TABLE FOR CLEANING AND TRANSFORMATION.png?raw=true"/>]: #
             
-4. Analyzing Payer and medical specialty Influence: I grouped readmission rates by payer_code and medical_specialty to see if certain insurance types or medical specialty correlated with higher or lower rates of readmission.
+- Analyzing Payer and medical specialty Influence: I grouped readmission rates by payer_code and medical_specialty to see if certain insurance types or medical specialty correlated with higher or lower rates of readmission.
 
    --Readmission rates by payer_code
    
