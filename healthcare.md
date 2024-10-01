@@ -56,7 +56,7 @@ The analysis involved several stages to identify key insights:
 
 The analysis shows that most patients spends between 1 to 4 days in the hospital. Overall the majority of the patients spends between 1 to 7 days in the hospital. 
 
-- Segmentation of Readmitted Patients: I categorized patients by their readmission status (No, <30, >30) and examined how each patient group differed in terms of the number of medications, and procedures. The average number of medications and number of procedures are similar across the 3 readmission status.
+- Segmentation of Readmitted Patients: I categorized patients by their readmission status (No, <30, >30) and examined how each patient group differed in terms of the number of medications, and procedures. 
 
 ``` SQL
    --Average number of medications and procedures by readmission status
@@ -68,6 +68,7 @@ The analysis shows that most patients spends between 1 to 4 days in the hospital
 
 <img src="images/readmitted AVG(num_medications).png?raw=true"/>
 
+The average number of medications and number of procedures are similar across the 3 readmission status.
             
 - Analyzing Payer and medical specialty Influence: I grouped readmission rates by payer_code and medical_specialty to see if certain insurance types or medical specialty correlated with higher or lower rates of readmission.
 
@@ -94,9 +95,19 @@ The analysis shows that most patients spends between 1 to 4 days in the hospital
    ORDER BY 
        readmission_rate_percentage DESC;
 ```
+<img src="images/payer_code.png?raw=true"/>
 
 With the most payers having about 50% of readmission rate digging deeper into the hospital processes is recommended.
 This led to similar analysis of the data grouped by the medical specialty.
+
+<img src="images/medical_specialty readmission rate.png?raw=true"/>
+<img src="images/Surgery-Thoracic.png?raw=true"/>
+<img src="images/Surgery-Podiatric.png?raw=true"/>
+<img src="images/Podiatrics-Endocrinology.png?raw=true"/>
+
+As expected the Endocrinologist has one of the lowest rates of readmission. 
+It is recommended that all diabetic patients see an endocrinologist regardless of what the primary diagnosis is for the initial admission.
+
 
 - The hospital director needs a list of the medical specialties that have an average number of procedure count above 2.5 with the total procedure count above 49.
 
@@ -110,7 +121,7 @@ This led to similar analysis of the data grouped by the medical specialty.
    ORDER BY average_proc DESC;
 ```
 
-<img src="images/Viet Nam.png?raw=true"/>
+<img src="images/medical_specialty.png?raw=true"/>
 
 - The Chief of Nursing wants to know if the hospital seems to be treating patients of different races differently, specifically with the number of lab procedures done.
 
@@ -122,7 +133,7 @@ This led to similar analysis of the data grouped by the medical specialty.
    ORDER BY lab DESC;
 ```
 
-<img src="images/country_spelling a.png?raw=true"/>
+<img src="images/AfricanAmerican.png?raw=true"/>
                                                                     
 The analysis indicated there are no differences in the way patients are treated based on their race and the number of lab procedures done. 
 
@@ -140,7 +151,7 @@ The analysis indicated there are no differences in the way patients are treated 
    ORDER BY patient_nbr;
 ```
 
- <img src="images/SOUTH ASIA.png?raw=true"/>
+ <img src="images/patient_nbr.png?raw=true"/>
 
 - The management wants a report in the following format:
 
@@ -162,7 +173,7 @@ I used a combination of CASE WHEN, CONCAT, and JOINS to be able to accomplish th
    ORDER BY num_medications, num_lab_procedures DESC;
 ```
 
- <img src="images/AFRICA EAST.png?raw=true"/>
+ <img src="images/concat.png?raw=true"/>
 
 
 **Key takeaways from this analysis:**
