@@ -35,10 +35,9 @@ In the mystical world of global finance, few things hold as much power as the lo
 ### [Healthcare: Analyzing Readmission Rates Among Diabetic Patients](healthcare.md)
 <img src="images/LinkedIn Article (4).png?raw=true"/>
 
-In the mystical world of global finance, few things hold as much power as the loans granted by the World Bank. Embark on a journey through the fantastical world of data where you'll uncover how the World Bank's treasure trove has been distributed across the globe...)
+In many countries, including the U.S., hospitals face financial penalties for high readmission rates. Therefore, understanding the patterns of readmissions can offer a goldmine of insights to improve patient care strategies, reduce operational costs, and avoid penalties.
 
 
-In the mystical world of global finance, few things hold as much power as the loans granted by the World Bank. Embark on a journey through the fantastical world of data where you'll uncover how the World Bank's treasure trove has been distributed across the globe...
 ---
 ### More Projects Coming Soon
 Thank you for visiting my Portfolio!🙂
